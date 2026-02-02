@@ -13,3 +13,10 @@ def load_scaler():
     with open("../models/scaler.pkl", "rb") as f:
         scaler = pickle.load(f)
     return scaler
+
+
+def load_model_calibrated_baseline():
+    with open("../models/calibrated_baseline.pkl", "rb") as f:
+        calibrated_model = pickle.load(f)
+    return calibrated_model
+
